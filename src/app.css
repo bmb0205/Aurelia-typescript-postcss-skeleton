@@ -1,0 +1,15 @@
+@import '_config.css';
+
+$title-color-primary: #000;
+$message-color-primary: rgba(0, 0, 0, 0.5);
+
+.home {
+    color: $title-color-primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &--text {
+        color: $message-color-primary;
+    }
+}
