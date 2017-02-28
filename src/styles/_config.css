@@ -1,0 +1,64 @@
+$title-color-primary: blue;
+$message-color-primary: green;
+
+body {
+    height: 100%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mixins */
+@define-mixin flex-row $justify: center, $align: center {
+    width: 100%;
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@define-mixin flex-column $justify: center, $align: center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+/* Animations */
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

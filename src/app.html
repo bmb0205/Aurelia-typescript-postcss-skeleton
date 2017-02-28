@@ -1,9 +1,16 @@
 <template>
-  <require from="app.css"></require>
-  <div class="home">
-    <h1>${title}</h1>
-    <div class="home--text">
-      <h2>${message}</h2>
-    </div>
+  <require from="./styles/app.css"></require>
+  <div class="home__container">
+    <article class="home__article">
+      <header>
+        <h1>${title}</h1>
+      </header>
+      <section class="home__text">
+        ${message}
+      </section>
+    </article>
+    <article class="home__article">
+      <p>Asuhhhh dude</p>
+    </article>
   </div>
 </template>

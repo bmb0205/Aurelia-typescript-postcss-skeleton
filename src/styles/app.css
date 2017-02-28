@@ -1,0 +1,15 @@
+@import '_config.css';
+
+.home {
+    &__container {
+        color: $title-color-primary;
+    }
+
+    &__article {
+        @mixin flex-column;
+    }
+    
+    &__text {
+        color: $message-color-primary;
+    }
+}
