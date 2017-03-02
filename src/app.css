@@ -1,0 +1,179 @@
+/*@import './styles/_config.css';
+@import './styles/_grid.css';*/
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    background-color: blue;
+    width: 100%;
+    height: 100px;
+}
+
+
+/*.sup {
+    background-color: #ccc;
+    height: 100%;
+    padding: .8em 1em 0;
+    margin-bottom: 1em;
+}
+
+.flex-grid {
+    display: flex;
+    flex-direction: row;
+    &__container {
+        max-width: 100em;
+    }
+    &__cell {
+        flex: 1;
+        &>p {
+            background-color: #eee;
+        }
+        &--top {
+            align-self: flex-start;
+        }
+        &--center {
+            align-self: center;
+        }
+        &--bottom {
+            align-self: flex-end;
+        }
+    }
+    &--gutters {
+        margin: 1em 0 0 -1em;
+        &>.flex-grid__cell {
+            padding: 1em 0 0 1em;
+        }
+    }
+    &--start {
+        justify-content: flex-start;
+    }
+    &--center {
+        justify-content: center;
+    }
+    &--end {
+        justify-content: flex-end;
+    }
+}*/
+
+
+/*@for $i from 1 to 2 {
+    .flex-grid--c$(i) > .flex-grid__cell {
+        flex: 0 0 100%;
+    }
+}*/
+
+
+/* Defines how much width each column takes up per row with cN number of columns */
+
+.flex-grid--c1>.flex-grid__cell {
+    flex: 0 0 33%;
+}
+
+.flex-grid--c2>.flex-grid__cell {
+    flex: 0 0 50%;
+}
+
+.flex-grid--c3>.flex-grid__cell:first-of-type {
+    flex: 0 0 33%;
+}
+
+.flex-grid--c4>.flex-grid__cell:first-of-type {
+    flex: 0 0 25%;
+}
+
+.flex-grid--c6>.flex-grid__cell {
+    flex: 0 0 16.67%;
+}
+
+.flex-grid--c12>.flex-grid__cell {
+    flex: 0 0 6.25%;
+}
+
+.sup {
+    background-color: red;
+}
+
+@media all and (min-width: 768px) and (max-width: 1199px) {
+    .sup {
+        background-color: blue;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .sup {
+        background-color: #ccc;
+        height: 100%;
+        padding: .8em 1em 0;
+        margin-bottom: 1em;
+    }
+    .flex-grid {
+        display: flex;
+        flex-direction: row;
+        &__container {
+            max-width: 100em;
+        }
+        &__cell {
+            flex: 1;
+            &>p {
+                background-color: #eee;
+            }
+            &--top {
+                align-self: flex-start;
+            }
+            &--center {
+                align-self: center;
+            }
+            &--bottom {
+                align-self: flex-end;
+            }
+        }
+        &--gutters {
+            margin: 1em 0 0 -1em;
+            &>.flex-grid__cell {
+                padding: 1em 0 0 1em;
+            }
+        }
+        &--start {
+            justify-content: flex-start;
+        }
+        &--center {
+            justify-content: center;
+        }
+        &--end {
+            justify-content: flex-end;
+        }
+    }
+    /*@for $i from 1 to 2 {
+    .flex-grid--c$(i) > .flex-grid__cell {
+        flex: 0 0 100%;
+    }
+}*/
+    .flex-grid--c1>.flex-grid__cell {
+        flex: 0 0 33%;
+    }
+    .flex-grid--c2>.flex-grid__cell {
+        flex: 0 0 50%;
+    }
+    .flex-grid--c3>.flex-grid__cell:first-of-type {
+        flex: 0 0 33%;
+    }
+    .flex-grid--c4>.flex-grid__cell:first-of-type {
+        flex: 0 0 25%;
+    }
+    .flex-grid--c6>.flex-grid__cell {
+        flex: 0 0 16.67%;
+    }
+    .flex-grid--c12>.flex-grid__cell {
+        flex: 0 0 6.25%;
+    }
+    .navigation {
+        background-color: blue;
+        width: 100%;
+        height: 100px;
+    }
+}

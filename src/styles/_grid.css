@@ -1,0 +1,101 @@
+@custom-media --small-viewport (max-width: 24em);
+@custom-media --medium-viewport (min-width: 25em) and (max-width: 48em);
+@custom-media --large-viewport (min-width: 49em);
+@custom-media --high-dppx (-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx);
+/*.flex-grid {
+    display: flex;
+    align-items: stretch;
+}
+
+.col {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+    /*@for $i from 0 to 12*/
+/*}*/
+
+/*.c {
+    &--8 {
+        margin-left: calc(3/8 * 100% + 10px);
+    }
+    &--9 {
+        margin-left: calc(4/8 * 100% + 10px);
+        margin-right: calc(2/8 * 100% + 10px);
+    }
+    &--10 {
+        margin-left: calc(5/8 * 100% + 10px);
+        margin-right: calc(2/8 * 100% + 10px);
+    }
+    &--11 {
+        margin-left: calc(6/8 * 100% + 10px);
+        margin-right: calc(1/8 * 100% + 10px);
+    }
+    &--12 {
+        margin-left: calc(7/8 * 100% + 10px);
+        margin-right: calc(0/8 * 100% + 10px);
+    }
+}*/
+
+/*.sup {
+    background-color: #ccc;
+    height: 100%;
+}
+
+.flex-grid {
+    display: flex;
+    flex-direction: row;
+    &__container {
+        max-width: 100em;
+    }
+    &--gutters {
+        margin: -1em 0 0 -1em;
+        & > .flex-grid__cell {
+            padding: 1em 0 0 1em;
+        }
+    }
+    &--start {
+        justify-content: flex-start;
+    }
+    &--center {
+        justify-content: center;
+    }
+    &--end {
+        justify-content: flex-end;
+    }
+    &--full {}
+}
+
+.flex-grid__cell {
+    flex: 1;
+    &>p {
+        background-color: #eee;
+    }
+    &--top {}
+    &--center {}
+    &--bottom {}
+}*/
+
+
+/*.grid--fit>.grid__cell {
+    flex: 1;
+}
+
+.grid--full>.grid__cell {
+    flex: 0 0 100%;
+}
+
+.grid--half>.grid__cell {
+    flex: 0 0 50%;
+}
+
+.grid--third>.grid-cell {
+    flex: 0 0 33.3333%;
+}
+
+.grid--fourth>.grid__cell {
+    flex: 0 0 25%;
+}*/
+
+@media (--medium-viewport) {}
